@@ -1,6 +1,6 @@
 public class leetcode_even_no_digits {
     //Given an array nums of integrer, return how many of them contains even no. of digits
-
+//1295: Find numbers with Even number of Digits
 public static void main(String[] args){
     int[] nums={12,34,9876,1,765};
     System.out.println(findNumbers(nums));
