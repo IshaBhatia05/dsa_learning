@@ -2,23 +2,21 @@ public class leetcode_even_no_digits {
     //Given an array nums of integrer, return how many of them contains even no. of digits
 
 public static void main(String[] args){
-    int[] arr={12,344,9876,1,765};
-    findNumElements(arr);
+    int[] nums={12,34,9876,1,765};
+    System.out.println(findNumbers(nums));
 
 
 }
-    static void findNumElements(int[] arr){
-
-        for(int num:arr){
+    static int findNumbers(int[] nums){
+        int counter=0;
+        for(int num:nums){
             int digitcount=even(countofdigits(num));
             if(digitcount==1){
-                System.out.println("Even no.");
+                counter++;
             }
-            else{
-                System.out.println("Odd no.");
-            }
-        }
 
+        }
+    return counter;
     }
     static int even(int digitcount){
         if(digitcount%2==0){
