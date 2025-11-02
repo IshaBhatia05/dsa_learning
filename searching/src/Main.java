@@ -15,17 +15,34 @@ public class Main {
 
 
     }
-    static int linerSearch(int[] arr,int target){
-        if(arr.length==0){
+
+    static int linerSearch(int[] arr, int target) {
+        if (arr.length == 0) {
             return -1;
-        }else{
-            for(int i=0;i<arr.length-1;i++){
-                if(arr[i]==target){
+        } else {
+            for (int i = 0; i < arr.length - 1; i++) {
+                if (arr[i] == target) {
                     return i;
                 }
             }
         }
 
-            return -1;
+        return -1;
+    }
+
+    static int binarySearch(int[] arr, int target) {
+        int start = 0;
+        int end = arr.length - 1;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (target < arr[mid]) {
+                end = mid - 1;
+            } else if (target > arr[mid]) {
+                start = mid + 1;
+            } else {
+                return mid;
+            }
+        }
+        return -1;
     }
 }
