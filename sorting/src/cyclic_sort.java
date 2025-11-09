@@ -11,10 +11,11 @@ public class cyclic_sort {
         while(i<arr.length){
             int correct=arr[i]-1;//index of element in cyclic sort = value-1
             if(arr[i]!=arr[correct]){
-                selection_sort.swap(arr,i,correct);
-            }
-                i++;
-
+                int temp = arr[i];
+                arr[i] = arr[correct];
+                arr[correct] = temp;
+            }else{
+i++;}
         }
 
 
