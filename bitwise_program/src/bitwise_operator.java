@@ -85,26 +85,27 @@ public static int setbits(int n){
     public static void main(String[] args) {
         int[] arr={2,3,3,4,2,6,4};
         int[] arr1={2,2,4,3,3,4,2,3,6,4};
-        System.out.println("isOdd:"+isOdd(67));
-        System.out.println("Repeated no:"+isRepeat(arr));
-        System.out.println("Find ith bit: "+ibit(7,4));
+//        System.out.println("isOdd:"+isOdd(67));
+//        System.out.println("Repeated no:"+isRepeat(arr));
+//        System.out.println("Find ith bit: "+ib it(7,4));
         System.out.println("Set bit:"+setibit(7,2));
         System.out.println("ReSet bit:"+resetibit(3,1));
-        System.out.println("Right Set bit:"+rightSetBit(18));
-        System.out.println("Unique No Thrice:"+uniqueNoThrice(arr1));
-        System.out.println("Magic No: "+magic_no(8));
-        System.out.println("No. of digits with Base No. 10 : "+noDigitsBase10(24));
-        //Give no. n, find the no. of set bits in it
-        System.out.println(" Integer to Binary string: "+Integer.toBinaryString(45));
-        //return Binary conversation of no.
-        System.out.println("Set bit count:"+setbits(45));
-        //range  XOR for a,b : a=3,b=9
-        //xor a
-        System.out.println("Value of a:"+xor(9));
-        //xor b
-        System.out.println("Value of b:"+xor(2));
-        int ans= xor(9)^xor(2);
-        System.out.println("Range of no. of XOR:"+ans);
+        System.out.println("ith bit:"+ibit(7,1));
+//        System.out.println("Right Set bit:"+rightSetBit(18));
+//        System.out.println("Unique No Thrice:"+uniqueNoThrice(arr1));
+//        System.out.println("Magic No: "+magic_no(8));
+//        System.out.println("No. of digits with Base No. 10 : "+noDigitsBase10(24));
+//        //Give no. n, find the no. of set bits in it
+//        System.out.println(" Integer to Binary string: "+Integer.toBinaryString(45));
+//        //return Binary conversation of no.
+//        System.out.println("Set bit count:"+setbits(45));
+//        //range  XOR for a,b : a=3,b=9
+//        //xor a
+//        System.out.println("Value of a:"+xor(9));
+//        //xor b
+//        System.out.println("Value of b:"+xor(2));
+//        int ans= xor(9)^xor(2);
+//        System.out.println("Range of no. of XOR:"+ans);
     }
 
 }
